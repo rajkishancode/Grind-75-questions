@@ -157,3 +157,27 @@ Pseudo Code:
 
 -----------------------------------------------------------------------------------------------------
 8
+Function: search
+
+Input:
+   - nums: a sorted array of integers
+   - target: the target value to search for in the array
+
+Output:
+   - Index of the target in the array if found, otherwise -1
+
+Pseudo Code:
+   1. Initialize 'left' to 0, and 'right' to the index of the last element in 'nums'.
+   2. While 'left' is less than or equal to 'right':
+      a. Calculate the middle index 'mid' using: `mid = Math.floor((left + right) / 2);`
+      b. If 'nums[mid]' is equal to 'target', return 'mid' as the index of the target.
+      c. If 'nums[mid]' is less than 'target', update 'left' to 'mid + 1' (search in the right half).
+      d. If 'nums[mid]' is greater than 'target', update 'right' to 'mid - 1' (search in the left half).
+   3. If the while loop exits, return -1 (target not found in the array).
+
+Time Complexity Analysis:
+   - The time complexity of this binary search algorithm is O(log n), where 'n' is the size of the input array 'nums'.
+   - In each iteration, the search space is halved by adjusting 'left' or 'right', leading to a logarithmic time complexity.
+   - This efficiency makes binary search particularly advantageous for sorted arrays when compared to linear search, which has a time complexity of O(n).
+-----------------------------------------------------------------------------------------------------
+9
