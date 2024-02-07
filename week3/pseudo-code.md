@@ -25,3 +25,6 @@ Function lengthOfLongestSubstring(s):
 
     // Return the maximum length of the substring with unique characters
     return maxLength
+
+----------------------------------------------------------------
+3) link - [https://www.youtube.com/watch?v=DhFh8Kw7ymk]
