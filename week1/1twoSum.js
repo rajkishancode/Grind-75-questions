@@ -26,7 +26,7 @@ var twoSum = function (nums, target) {
 
 // console.log(twoSum([1,12,3,4,12],24));
 
-// --------------------Better Approach(using Hashing): -------------------------------
+// --------------------Better Approach(using Hashing):------------------------------
 
 var twoSum1 = function (nums, target) {
    
